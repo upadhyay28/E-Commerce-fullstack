@@ -1,0 +1,115 @@
+/* Global reset */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Main navbar styling */
+.nav {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+
+/* Left section: logo + search */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Brand (logo + name) */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 10px;
+}
+
+/* Search input */
+.search input {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 220px;
+  font-size: 14px;
+}
+
+/* Links section */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 30%;
+}
+
+.links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.links li a:hover {
+  color: #00e0ff;
+}
+
+/* Cart and Profile icons */
+.navbar-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 20px;
+
+}
+.cartIcon{
+  color: white;
+}
+
+.Logo{
+  border-radius: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+
+}
